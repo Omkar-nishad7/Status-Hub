@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status-page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="status-page py-5">
+        <div class="container">
+            <header class="status-header d-flex justify-content-between align-items-center mb-5">
+                <div class="logo d-flex align-items-center">
+                    <div class="status-indicator"></div>
+                    <h1 class="ms-3 mb-0">
+                        StatusHub
+                    </h1>
+                </div>
+                <div class="header-links">
+                    <a href="#">Subscribe to updates</a>
+                    <span class="mx-2">•</span>
+                    <a href="#">RSS</a>
+                </div>
+            </header>
+            <section class="overall-status mb-5">
+                <div class="status-banner d-flex align-items-center">
+                    <div class="pulse-dot"></div>
+                    <div class="banner-content">
+                        <h2 class="mb-1">
+                            All Systems Operational
+                        </h2>
+                        <p class="mb-0">
+                            Updated 25/06/2026, 03:55:52 · 99.98% uptime over 90 days
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="components-section">
+                <h3 class="section-title mb-4">
+                    COMPONENTS
+                </h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+    <div class="component-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>API</h4>
+            <span class="badge operational">Operational</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars api-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>99.99% uptime</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6">
+    <div class="component-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Dashboard</h4>
+            <span class="badge operational">Operational</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars dashboard-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>100.00% uptime</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6">
+    <div class="component-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Payments</h4>
+            <span class="badge degraded">Degraded</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars payment-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>99.71% uptime</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6">
+    <div class="component-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Email</h4>
+            <span class="badge operational">Operational</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars email-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>99.95% uptime</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6">
+    <div class="component-card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>CDN</h4>
+            <span class="badge operational">Operational</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars cdn-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>100.00% uptime</span>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6">
+    <div class="component-card">
+
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Webhooks</h4>
+            <span class="badge operational">Operational</span>
+        </div>
+        <div class="uptime-strip">
+            <div class="bars webhook-bars"></div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <span>90 days ago</span>
+            <span>99.98% uptime</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section class="incidents-section mt-5">
+    <h3 class="section-title mb-4">
+        PAST INCIDENTS
+    </h3>
+    <div class="incident-list">
+        <div class="incident-item d-flex justify-content-between align-items-center">
+            <div>
+                <h4>Elevated payment latency</h4>
+                <p>
+                    Resolved · 18 Jun, 14:20 IST · lasted 26 min
+                </p>
+            </div>
+            <span class="badge degraded">
+                Degraded
+            </span>
+        </div>
+        <div class="incident-item d-flex justify-content-between align-items-center">
+            <div>
+                <h4>Email delivery delays</h4>
+                <p>
+                    Resolved · 11 Jun, 09:05 IST · lasted 1 h 12 min
+                </p>
+            </div>
+            <span class="badge outage">
+                Outage
+            </span>
+        </div>
+        <div class="incident-item d-flex justify-content-between align-items-center">
+            <div>
+                <h4>Scheduled DB maintenance</h4>
+                <p>
+                    Completed · 04 Jun, 02:00 IST
+                </p>
+            </div>
+            <span class="badge maintenance">
+                Maintenance
+            </span>
+        </div>
+    </div>
+</section>
+<footer class="text-center mt-5">
+    <p>
+        StatusHub • demo • pure CSS grid • flexbox • keyframe animation
+    </p>
+</footer>
+</div>
+</main>
+</body>
+</html>
